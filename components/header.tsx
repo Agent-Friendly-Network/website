@@ -63,10 +63,10 @@ export function Header() {
             href="https://agentuniver.com"
             target="_blank"
             rel="noreferrer"
-            className="flex items-center gap-1 text-xs font-medium px-3 py-1.5 rounded border border-emerald-500/40 bg-emerald-500/10 text-emerald-300 hover:bg-emerald-500/20 hover:border-emerald-500/60 transition-colors font-mono tracking-tight"
+            className="flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded border border-emerald-500/40 bg-emerald-500/10 text-emerald-300 hover:bg-emerald-500/20 hover:border-emerald-500/60 transition-colors font-mono tracking-tight"
           >
-            Marketplace
-            <ArrowUpRight className="w-3 h-3" />
+            Monetize on AgentUniver
+            <ArrowUpRight className="w-3.5 h-3.5" />
           </a>
           <a
             href="https://github.com/Agent-Friendly-Network"
@@ -114,9 +114,9 @@ export function Header() {
               href="https://agentuniver.com"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center justify-center gap-1.5 text-xs font-mono text-emerald-300 py-2 border border-emerald-500/40 rounded bg-emerald-500/10"
+              className="flex items-center justify-center gap-1.5 text-xs font-semibold font-mono text-emerald-300 py-2.5 border border-emerald-500/40 rounded bg-emerald-500/15"
             >
-              AgentUniver Marketplace
+              Monetize on AgentUniver
               <ArrowUpRight className="w-3.5 h-3.5" />
             </a>
             <a
