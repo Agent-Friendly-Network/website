@@ -1,0 +1,32 @@
+name: BibleOS Sovereign Agent Audit
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  bibleos-verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Verify Agent Egress & Reality Ledger
+        id: bibleos
+        uses: Tigoreto/BibleOS@v1
+        with:
+          target-path: "./app/api"
+          strict-mode: "true"
+          allowed-endpoints: "api.github.com,agentfriendly.network"
+          generate-ledger: "true"
+          ledger-output: "bibleos-ledger.json"
+
+      - name: Upload Reality Ledger Proof
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bibleos-reality-ledger
+          path: bibleos-ledger.json
+          if-no-files-found: warn

@@ -162,9 +162,17 @@ export function Footer() {
           <div>
             (c) {new Date().getFullYear()} Agent Friendly Network (AFN). Open Standards Consortium.
           </div>
-          <div className="flex items-center gap-6">
+          <div className="flex flex-wrap items-center gap-4">
+            <Link href="/legal/terms" className="hover:text-zinc-200 transition-colors">
+              Terms of Service
+            </Link>
+            <span className="text-zinc-700">|</span>
+            <Link href="/legal/privacy" className="hover:text-zinc-200 transition-colors">
+              Privacy Policy
+            </Link>
+            <span className="text-zinc-700">|</span>
             <span>License: Apache 2.0 / CC-BY-4.0</span>
-            <span className="text-zinc-500">|</span>
+            <span className="text-zinc-700">|</span>
             <span>Non-Commercial Technical Association</span>
           </div>
         </div>
