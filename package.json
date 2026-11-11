@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "sync:bridge": "bun build ../bridge/src/index.js --outfile lib/afn-bridge.mjs --target=node --format=esm"
   },
   "dependencies": {
     "clsx": "^2.1.1",
